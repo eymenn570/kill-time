@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KILL TIME</title>
-  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 
@@ -16,11 +16,48 @@
     <img
       class="menu-image"
       src="https://i.ibb.co/Q77sXPVc/1000030605.png"
-      alt="KILL TIME Menü Görseli"
+      alt="KILL TIME"
     >
 
-    <button id="start">OYUNA BAŞLA</button>
-    <small>YUNIX AMONG • v0.3</small>
+    <button id="start">TEK OYUNCULU OYNA</button>
+
+    <hr>
+
+    <h2>ÇEVRİMİÇİ SUNUCU</h2>
+
+    <input
+      id="playerName"
+      type="text"
+      maxlength="16"
+      placeholder="Oyuncu adın"
+    >
+
+    <button id="createRoom">SUNUCU OLUŞTUR</button>
+
+    <input
+      id="roomCode"
+      type="text"
+      maxlength="6"
+      placeholder="6 karakterli sunucu kodu"
+    >
+
+    <button id="joinRoom">SUNUCUYA KATIL</button>
+
+    <p id="serverStatus">Sunucu bağlantısı bekleniyor...</p>
+
+    <div id="lobby">
+      <h3>ODA KODU</h3>
+      <strong id="roomCodeText">------</strong>
+
+      <h3>OYUNCULAR</h3>
+      <ul id="playerList"></ul>
+
+      <button id="startOnline" hidden>
+        OYUNU BAŞLAT
+      </button>
+    </div>
+
+    <small>YUNIX AMONG • v0.4</small>
   </div>
 
   <div id="game" class="hidden">
@@ -47,6 +84,13 @@
     <p id="message">Uzay gemisine hoş geldin!</p>
   </div>
 
-  <script src="game.js?v=2"></script>
+  <!-- Render sunucu adresini buraya yaz -->
+  <script>
+    window.KILL_TIME_SERVER = "https://YOUR-SERVICE.onrender.com";
+  </script>
+
+  <script src="game.js?v=4"></script>
+  <script src="multiplayer.js?v=1"></script>
+
 </body>
 </html>
