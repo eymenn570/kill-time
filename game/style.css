@@ -1,114 +1,57 @@
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  background: #090f20;
-  color: white;
-  font-family: Arial, sans-serif;
-  text-align: center;
-}
-
-.hidden {
-  display: none !important;
-}
-
-#menu {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: radial-gradient(#263d62,#090f20);
-  gap: 20px;
-}
-
-h1 {
-  font-size: clamp(45px, 10vw, 75px);
-  color: #ff4545;
-  text-shadow: 0 0 25px red;
-  letter-spacing: 5px;
-}
-
-#menu p {
-  color: #a9c4ec;
-  letter-spacing: 3px;
-}
-
-button {
-  border: 0;
-  border-radius: 10px;
-  padding: 14px 22px;
-  background: #ed414c;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  touch-action: none;
-}
-
-#start {
-  width: 230px;
-  padding: 18px;
-}
-
-header {
-  background: #1b2b45;
-  padding: 16px 8px;
-  display: flex;
-  justify-content: space-around;
-  gap: 8px;
-  font-size: 12px;
-}
-
-header b {
-  color: #ff5555;
-}
-
-#world {
+#menu input {
   display: block;
-  width: min(100%, 800px);
-  height: auto;
+  width: 85%;
+  max-width: 350px;
+  padding: 12px;
   margin: 10px auto;
-  border: 2px solid #516c92;
-  background: #15243b;
+  border: 1px solid #555;
+  border-radius: 8px;
+  background: #202020;
+  color: white;
+  font-size: 16px;
 }
 
-.actions {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
+#menu button {
+  margin: 6px;
 }
 
-.controls {
-  display: grid;
-  grid-template-columns: repeat(3, 55px);
-  justify-content: center;
-  gap: 5px;
-  margin: 15px;
+#menu hr {
+  margin: 20px 0;
+  border-color: #444;
 }
 
-.controls button {
-  background: #344e70;
-  font-size: 20px;
+#lobby {
+  margin: 15px auto;
+  padding: 12px;
+  max-width: 350px;
+  background: #202020;
+  border-radius: 12px;
 }
 
-.controls button:nth-child(1) {
-  grid-column: 2;
+#roomCodeText {
+  font-size: 28px;
+  letter-spacing: 5px;
+  color: #50e890;
 }
 
-#message {
-  color: #9ec5ff;
-  font-size: 13px;
-  padding: 10px;
+#playerList {
+  list-style: none;
+  padding: 0;
 }
 
-.menu-image {
-  display: block;
-  width: min(80%, 350px);
-  max-height: 250px;
-  object-fit: contain;
-  border-radius: 15px;
-  margin: 5px auto 15px;
+#playerList li {
+  padding: 8px;
+  margin: 5px;
+  background: #333;
+  border-radius: 6px;
+}
+
+#serverStatus {
+  color: #50e890;
+  font-size: 14px;
+}
+
+#startOnline[hidden] {
+  display: none;
 }
