@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KILL TIME - Parti Oluştur</title>
+  <link rel="stylesheet" href="create.css">
+</head>
+<body>
+  <main class="panel">
+    <a href="/game/" class="back">← GERİ</a>
+
+    <div class="icon">🛸</div>
+    <h1>PARTİ OLUŞTUR</h1>
+    <p>Kendi odanı oluştur ve arkadaşlarını davet et.</p>
+
+    <input id="playerName" maxlength="16"
+      placeholder="Oyuncu adın">
+
+    <button id="createButton">ODA OLUŞTUR</button>
+
+    <section id="result" hidden>
+      <p>ODA KODUN</p>
+      <div id="roomCode"></div>
+      <button id="copyButton">KODU KOPYALA</button>
+      <a href="/game/" class="game-link">OYUNA DÖN</a>
+    </section>
+
+    <p id="status">Sunucuya bağlanılıyor...</p>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="create.js"></script>
+</body>
+</html>
