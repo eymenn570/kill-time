@@ -1,0 +1,85 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: #0b1020;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.panel {
+  width: 100%;
+  max-width: 390px;
+  padding: 28px 22px;
+  text-align: center;
+  border: 1px solid #35476d;
+  border-radius: 22px;
+  background: linear-gradient(145deg, #202c48, #111827);
+}
+
+.back {
+  display: block;
+  text-align: left;
+  color: #a9b8dc;
+  text-decoration: none;
+}
+
+.icon {
+  margin-top: 25px;
+  font-size: 55px;
+}
+
+h1 {
+  font-size: 27px;
+  letter-spacing: 2px;
+}
+
+p {
+  color: #aab8d0;
+}
+
+input {
+  width: 100%;
+  margin: 15px 0;
+  padding: 16px;
+  border: 1px solid #526cff;
+  border-radius: 10px;
+  background: #0b1220;
+  color: white;
+  text-align: center;
+  font-size: 17px;
+}
+
+button, .game-link {
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+  padding: 16px;
+  border: 0;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #526cff, #794cff);
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#roomCode {
+  padding: 20px;
+  border: 2px solid #526cff;
+  border-radius: 12px;
+  background: #0b1220;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 8px;
+}
+
+#status {
+  font-size: 13px;
+}
