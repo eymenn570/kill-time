@@ -27,24 +27,17 @@
 
       <button id="createButton">ODA OLUŞTUR</button>
 
-      <div class="join-area">
-        <input
-          id="roomCode"
-          maxlength="5"
-          placeholder="ODA KODU">
-        <button id="joinButton">KATIL</button>
-      </div>
+      
+<div class="menu-buttons">
+  <a href="/pages/create/" class="menu-button">
+    🚀 PARTİ OLUŞTUR
+  </a>
 
-      <div id="status">Sunucuya bağlanılıyor...</div>
-
-      <section id="roomPanel" hidden>
-        <h2>ODA: <span id="roomCodeText"></span></h2>
-        <p>Oyuncular:</p>
-        <ul id="playerList"></ul>
-        <button id="startButton" hidden>OYUNU BAŞLAT</button>
-        <p id="waitingText">Oyun sahibi bekleniyor...</p>
-      </section>
-    </section>
+  <a href="/pages/join/" class="menu-button">
+    🎮 PARTİYE KATIL
+  </a>
+</div>
+    
 
     <section id="gamePanel" hidden>
       <h2>KILL TIME</h2>
