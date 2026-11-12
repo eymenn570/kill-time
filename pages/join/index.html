@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KILL TIME - Partiye Katıl</title>
+  <link rel="stylesheet" href="join.css">
+</head>
+<body>
+  <main class="panel">
+    <a class="back" href="/game/">← GERİ</a>
+
+    <div class="icon">🚀</div>
+    <h1>PARTİYE KATIL</h1>
+    <p>Arkadaşının oda kodunu gir.</p>
+
+    <input id="playerName" maxlength="16"
+      placeholder="Oyuncu adın">
+
+    <label for="roomCode">ODA KODU</label>
+    <input id="roomCode" maxlength="5"
+      placeholder="A B C 1 2"
+      autocomplete="off">
+
+    <button id="joinButton">PARTİYE KATIL</button>
+    <p id="status">Sunucuya bağlanılıyor...</p>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="join.js"></script>
+</body>
+</html>
+  
